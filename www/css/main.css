@@ -1,0 +1,11 @@
+.main-text{
+    color: green;
+}
+
+#text-in-b {
+    color: salmon;
+}
+
+div p b, div p i {
+    color: blue;
+}
