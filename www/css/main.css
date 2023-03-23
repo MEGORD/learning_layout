@@ -1,11 +1,17 @@
-.main-text{
-    color: green;
+body {
+    /*background-color: #d9cfe3;*/
+    /*background-image: url("https://www.pcclean.io/wp-content/uploads/2020/4/qiqEny.jpg");*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: center;*/
 }
 
-#text-in-b {
-    color: salmon;
+#first {
+    height: 500px;
+    background: url("https://www.pcclean.io/wp-content/uploads/2020/4/qiqEny.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-div p b, div p i {
-    color: blue;
+#second {
+    height: 2000px;
 }
