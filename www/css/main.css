@@ -13,20 +13,21 @@ body {
     height: 2000px;
 }
 
-#absolute_button {
-    position: absolute;
-    color: #ffffff;
-    background-color: indianred;
-    height: 70px;
-    width: 70px;
-    margin-top: 890px;
-    margin-left: 45%;
-}
+/*#absolute_button {*/
+/*    position: absolute;*/
+/*    color: #ffffff;*/
+/*    background-color: gray;*/
+/*    height: 70px;*/
+/*    width: 70px;*/
+/*    margin-top: 890px;*/
+/*    margin-left: 50%;*/
+/*    opacity: 100%;*/
+/*}*/
 
 #first {
     height: 500px;
-    width: 93%;
-    background: url("https://www.pcclean.io/wp-content/uploads/2020/4/qiqEny.jpg") no-repeat;
+    width: 100%;
+    background-image: url(images/fourht.png);
     background-size: cover;
     background-attachment: fixed;
     opacity: 0.9;
@@ -36,19 +37,22 @@ body {
 
 #second {
     height: 1500px;
-    background-color: papayawhip;
+    background-color: darkslategray;
     float: bottom;
 }
 
-#aside {
-    height: 2000px;
-    width: 7%;
-    color: green;
-    background-color: lightgreen;
-    border: 0px solid green;
-    border-right: 10px;
-    float: right;
-    opacity: 1;
+.navigation {
+    list-style: none;
+    float: left;
+    height: 140px;
+    width: 140px;
+    margin-left: 15%;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.navigation img {
+    display: inline;
 }
 
 .main_text {
