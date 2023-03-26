@@ -10,7 +10,7 @@ body {
     /*background-image: url("https://www.pcclean.io/wp-content/uploads/2020/4/qiqEny.jpg");*/
     /*background-repeat: no-repeat;*/
     /*background-position: center;*/
-    height: 2000px;
+    height: 1878px;
 }
 
 /*#absolute_button {*/
@@ -36,44 +36,45 @@ body {
 }
 
 #second {
-    height: 1500px;
+    height: 50%;
+    width: 100%;
     background-color: darkslategray;
     float: bottom;
+}
+#third {
+    display: flex;
+    justify-content: space-between;
 }
 
 .navigation {
     list-style: none;
-    float: left;
+    /*margin-left: 135px;*/
+    /*margin-right: 135px;*/
     height: 140px;
     width: 140px;
 }
 
 .navigation img {
-    display: inline;
 }
 
 button {
     background-color: darkslategray;
     border: 0;
     cursor: pointer;
-    margin-left: 14%;
-    margin-top: 50px;
+    width: auto;
+    height: auto;
     text-align: center;
+    display: flex;
+    flex-direction: row;
+
 }
 
 .main_text {
     color: #ffffff;
+    width: max-content;
     text-align: center;
     font-size: 2em;
     font-style: normal;
     font-weight: 600;
     font-family: 'Alkatra', cursive;
-}
-
-.main_button {
-    color: navy;
-    background-color: slateblue;
-    height: 70px;
-    width: 70px;
-    margin: 30px;
 }
