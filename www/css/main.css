@@ -43,7 +43,8 @@ body {
 }
 #third {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-basis: auto;
 }
 
 .navigation {
@@ -64,9 +65,8 @@ button {
     width: auto;
     height: auto;
     text-align: center;
-    display: flex;
+    display: inline-block;
     flex-direction: row;
-
 }
 
 .main_text {
