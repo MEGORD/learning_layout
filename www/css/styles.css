@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'HarryPotterFont'; /* Название шрифта, которое вы будете использовать */
+    src: url('fonts/harrypotterfont.ttf'); /* Путь к файлу шрифта на вашем сервере */
+    /* Дополнительные свойства шрифта, если необходимо */
+}
+
+body {
+    font-family: 'HarryPotterFont', sans-serif;
+}
