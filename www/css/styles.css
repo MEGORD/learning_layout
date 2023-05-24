@@ -4,6 +4,10 @@
     /* Дополнительные свойства шрифта, если необходимо */
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .fixed-buttons {
     display: flex;
     justify-content: center;
