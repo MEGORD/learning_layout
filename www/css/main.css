@@ -31,7 +31,7 @@ body {
 
 #hogwarts {
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     background-image: url(images/castle_with_car.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -40,33 +40,33 @@ body {
     float: top;
 }
 
-#griffindor {
+#griffindor_b {
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     background-image: url(images/griffindor_back.jpg);
     /*opacity: 0.3;*/
     z-index: 2;
 }
 
-#hufflepuff {
+#hufflepuff_b {
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     background-image: url(images/hufflepuff_back.jpg);
     /*opacity: 0.3;*/
     z-index: 2;
 }
 
-#slytherin {
+#slytherin_b {
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     background-image: url(images/slytherin_back.jpg);
     /*opacity: 0.3;*/
     z-index: 2;
 }
 
-#ravenclaw {
+#ravenclaw_b {
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     background-image: url(images/ravenclaw_back.jpg);
     /*opacity: 0.3;*/
     z-index: 2;
@@ -77,57 +77,57 @@ body {
     z-index: 1;
 }
 
-#first {
-    height: 50%;
-    width: 100%;
-    background-image: url(images/castle_with_car.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    opacity: 0.9;
-    padding-top: 50px;
-    float: top;
-}
+/*#first {*/
+/*    height: 50%;*/
+/*    width: 100%;*/
+/*    background-image: url(images/castle_with_car.jpg);*/
+/*    background-size: cover;*/
+/*    background-attachment: fixed;*/
+/*    opacity: 0.9;*/
+/*    padding-top: 50px;*/
+/*    float: top;*/
+/*}*/
 
-#second {
-    height: 50%;
-    width: 100%;
-    background-color: darkslategray;
-    float: bottom;
-}
-#third {
-    display: flex;
-    justify-content: center;
-    flex-basis: auto;
-}
+/*#second {*/
+/*    height: 50%;*/
+/*    width: 100%;*/
+/*    background-color: darkslategray;*/
+/*    float: bottom;*/
+/*}*/
+/*#third {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    flex-basis: auto;*/
+/*}*/
 
-.navigation {
-    list-style: none;
-    /*margin-left: 135px;*/
-    /*margin-right: 135px;*/
-    height: 140px;
-    width: 140px;
-}
+/*.navigation {*/
+/*    list-style: none;*/
+/*    !*margin-left: 135px;*!*/
+/*    !*margin-right: 135px;*!*/
+/*    height: 140px;*/
+/*    width: 140px;*/
+/*}*/
 
-.navigation img {
-}
+/*.navigation img {*/
+/*}*/
 
-button {
-    background-color: darkslategray;
-    border: 0;
-    cursor: pointer;
-    width: auto;
-    height: auto;
-    text-align: center;
-    display: inline-block;
-    flex-direction: row;
-}
+/*button {*/
+/*    background-color: darkslategray;*/
+/*    border: 0;*/
+/*    cursor: pointer;*/
+/*    width: auto;*/
+/*    height: auto;*/
+/*    text-align: center;*/
+/*    display: inline-block;*/
+/*    flex-direction: row;*/
+/*}*/
 
-.main_text {
-    color: #ffffff;
-    width: max-content;
-    text-align: center;
-    font-size: 2em;
-    font-style: normal;
-    font-weight: 600;
-    font-family: 'Alkatra', cursive;
-}
+/*.main_text {*/
+/*    color: #ffffff;*/
+/*    width: max-content;*/
+/*    text-align: center;*/
+/*    font-size: 2em;*/
+/*    font-style: normal;*/
+/*    font-weight: 600;*/
+/*    font-family: 'Alkatra', cursive;*/
+/*}*/

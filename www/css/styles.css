@@ -4,6 +4,53 @@
     /* Дополнительные свойства шрифта, если необходимо */
 }
 
+.fixed-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    gap: 20px;
+}
+
+.button-image {
+    width: 100px; /* Ширина кнопки */
+    height: 100px; /* Высота кнопки */
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    transition: transform 0.3s, opacity 0.3s; /* Длительность анимации */
+    opacity: 0.6; /* Прозрачность кнопок */
+}
+
+.button-image:hover {
+    transform: scale(1.2); /* Увеличение размера кнопки при наведении */
+    opacity: 0.9; /* Возврат полной прозрачности при наведении */
+}
+
+@media screen and (max-width: 600px) {
+    /* Изменения для мобильных устройств или окон с шириной до 600px */
+    .fixed-buttons {
+        flex-direction: column; /* Расположение кнопок в столбец */
+        align-items: end; /* Выравнивание кнопок по центру */
+        bottom: 10px; /* Новое значение отступа снизу */
+    }
+
+    .button-image {
+        width: 80px; /* Уменьшенная ширина кнопок для мобильных устройств */
+        height: 80px; /* Уменьшенная высота кнопок для мобильных устройств */
+    }
+}
+
 body {
     font-family: 'HarryPotterFont', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
 }
