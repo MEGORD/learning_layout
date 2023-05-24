@@ -43,7 +43,7 @@ body {
 #griffindor_b {
     height: 100vh;
     width: 100vw;
-    background-image: url(images/griffindor_back.jpg);
+    background-image: url(images/griffindor_b.jpg);
     /*opacity: 0.3;*/
     z-index: 2;
 }
@@ -51,7 +51,7 @@ body {
 #hufflepuff_b {
     height: 100vh;
     width: 100vw;
-    background-image: url(images/hufflepuff_back.jpg);
+    background-image: url(images/hufflepuff_b.jpg);
     /*opacity: 0.3;*/
     z-index: 2;
 }
@@ -59,7 +59,7 @@ body {
 #slytherin_b {
     height: 100vh;
     width: 100vw;
-    background-image: url(images/slytherin_back.jpg);
+    background-image: url(images/slytherin_b.jpg);
     /*opacity: 0.3;*/
     z-index: 2;
 }
@@ -67,7 +67,7 @@ body {
 #ravenclaw_b {
     height: 100vh;
     width: 100vw;
-    background-image: url(images/ravenclaw_back.jpg);
+    background-image: url(images/ravenclaw_b.jpg);
     /*opacity: 0.3;*/
     z-index: 2;
 }
