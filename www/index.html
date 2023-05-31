@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Potterian</title>
+    <title>HOGWARTS</title>
 
     <link rel="apple-touch-icon" sizes="152x152" href="css/images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="css/images/favicon/favicon-32x32.png">
@@ -14,48 +15,70 @@
 
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/styles.css">
-<!--    <style>-->
-<!--        b {-->
-<!--            color: green;-->
-<!--        }-->
-<!--    </style>-->
 </head>
+
 <body>
-<!--<button id="absolute_button"> Вниз </button>-->
-<div class="fixed-buttons">
-    <a href="#griffindor_b" class="button-image" style="background-image: url('css/images/griffindor.png')"></a>
-    <a href="#hufflepuff_b" class="button-image" style="background-image: url('css/images/hufflepuff.png')"></a>
-    <a href="#slytherin_b" class="button-image" style="background-image: url('css/images/slytherin.png')"></a>
-    <a href="#ravenclaw_b" class="button-image" style="background-image: url('css/images/ravenclaw.png')"></a>
-</div>
-<div id="main">
-    <div id="hogwarts"></div>
-    <div id="griffindor_b">
-        <div class="adding_dark">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, facilis?</p>
+
+    <div class="fixed-buttons">
+        <button id="griffindor" class="btn-reset button-image"><a class="header__link"
+                href="#griffindor_b"></a></button>
+        <button id="hufflepuff" class="btn-reset button-image"><a class="header__link"
+                href="#hufflepuff_b"></a></button>
+        <button id="slytherin" class="btn-reset button-image"><a class="header__link" href="#slytherin_b"></a></button>
+        <button id="ravenclaw" class="btn-reset button-image"><a class="header__link" href="#ravenclaw_b"></a></button>
+    </div>
+
+    <header>
+        <div class="hogwarts">
+            <h1 class="header__title">
+                HOGWARTS
+            </h1>
+            <embed src="css/main_theme.mp3" loop="true" autostart="true" width="2" height="0">
         </div>
-    </div>
-    <div id="hufflepuff_b">
-        <div class="adding_dark"></div>
-    </div>
-    <div id="slytherin_b">
-        <div class="adding_dark"></div>
-    </div>
-    <div id="ravenclaw_b">
-        <div class="adding_dark"></div>
-    </div>
-</div>
-<!--<div id="first">-->
-<!--</div>-->
-<!--<div id="second">-->
-<!--&lt;!&ndash;    <p class="main_text">The site shows the four faculties of Hogwarts, and also tells&ndash;&gt;-->
-<!--&lt;!&ndash;        little information about them.</p>&ndash;&gt;-->
-<!--    <div id="third">-->
-<!--        <a href="griffindor.html"><button><img class="navigation" src="css/images/griffindor.png"></button></a>-->
-<!--        <a href="slytherin.html"><button><img class="navigation" src="css/images/slytherin.png"></button></a>-->
-<!--        <a href="hufflepuff.html"><button><img class="navigation" src="css/images/hufflepuff.png"></button></a>-->
-<!--        <a href="ravenclaw.html"><button><img class="navigation" src="css/images/ravenclaw.png"></button></a>-->
-<!--    </div>-->
-<!--</div>-->
+    </header>
+
+    <main class="main">
+        <section class="sections" id="griffindor_b">
+            <div class="sections__content">
+                <img class="sections__img" src="css/images/g.png" alt="">
+                <p class="text-reset sections__text">Gryffindor is one of the four houses at Hogwarts, which is famous
+                    for its courage,
+                    courage and determination. Gryffindor students usually show strength of character and are ready to
+                    take on challenges, stand up for truth and justice.
+                </p>
+            </div>
+        </section>
+
+        <section class="sections" id="hufflepuff_b">
+            <div class="sections__content">
+                <p class="text-reset sections__text">Slytherin is one of the four houses at Hogwarts, which is famous
+                    for its cunning, ambition and determination. Slytherin students tend to be shrewd and have a desire
+                    for power and success.
+                </p>
+                <img class="sections__img" src="css/images/h.png" alt="">
+            </div>
+        </section>
+
+        <section class="sections" id="slytherin_b">
+            <div class="sections__content">
+                <img class="sections__img" src="css/images/s.png" alt="">
+                <p class="text-reset sections__text">Hufflepuff is one of the four houses at Hogwarts, which is famous
+                    for its friendliness, patience and devotion. Hufflepuff students usually show concern for others,
+                    have a good heart and are ready to help those in need.
+                </p>
+            </div>
+        </section>
+
+        <section class="sections" id="ravenclaw_b">
+            <div class="sections__content">
+                <p class="text-reset sections__text">Ravenclaw is one of the four houses at Hogwarts, which is famous
+                    for its wisdom, intelligence and curiosity. Ravenclaw students are usually sharp-witted and strive
+                    for knowledge and understanding of the world around them.
+                </p>
+                <img class="sections__img" src="css/images/r.png" alt="">
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>

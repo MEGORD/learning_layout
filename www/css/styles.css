@@ -1,11 +1,31 @@
+/* MAIN */
+
 @font-face {
-    font-family: 'HarryPotterFont'; /* Название шрифта, которое вы будете использовать */
-    src: url('fonts/harrypotterfont.ttf'); /* Путь к файлу шрифта на вашем сервере */
+    font-family: 'HarryPotterFont';
+    /* Название шрифта, которое вы будете использовать */
+    src: url('fonts/harrypotterfont.ttf');
+    /* Путь к файлу шрифта на вашем сервере */
     /* Дополнительные свойства шрифта, если необходимо */
 }
 
 html {
     scroll-behavior: smooth;
+}
+
+.list-reset {
+    padding: 0;
+    list-style: none;
+}
+
+.btn-reset {
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border: none;
+}
+
+.text-reset {
+    margin: 0;
 }
 
 .fixed-buttons {
@@ -21,40 +41,188 @@ html {
 }
 
 .button-image {
-    width: 100px; /* Ширина кнопки */
-    height: 100px; /* Высота кнопки */
+    position: relative;
+    width: 100px;
+    height: 100px;
     border: none;
     background-color: transparent;
     background-repeat: no-repeat;
     background-size: cover;
     cursor: pointer;
-    transition: transform 0.3s, opacity 0.3s; /* Длительность анимации */
-    opacity: 0.6; /* Прозрачность кнопок */
+    transition: transform 0.3s, opacity 0.3s;
+    opacity: 0.6;
+}
+
+#griffindor {
+    background-image: url("../css/images/griffindor.png");
+}
+
+#hufflepuff {
+    background-image: url("../css/images/hufflepuff.png");
+}
+
+#slytherin {
+    background-image: url("../css/images/slytherin.png");
+}
+
+#ravenclaw {
+    background-image: url("../css/images/ravenclaw.png");
+}
+
+.header__link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
 }
 
 .button-image:hover {
-    transform: scale(1.2); /* Увеличение размера кнопки при наведении */
-    opacity: 0.9; /* Возврат полной прозрачности при наведении */
+    transform: scale(1.2);
+    /* Увеличение размера кнопки при наведении */
+    opacity: 0.9;
+    /* Возврат полной прозрачности при наведении */
 }
 
+/* HEADER */
+
+header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/castle_with_car.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.hogwarts {
+    display: flex;
+    justify-content: center;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.header__title {
+    margin: 0;
+    color: silver;
+    font-size: 250px;
+    opacity: 0.9;
+    color: #ffcc00;
+}
+
+/* MAIN CONTENT */
+
+.sections {
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    padding: 75px 0;
+    height: 100vh;
+    background-size: cover;
+    filter: brightness(75%);
+}
+
+#griffindor_b {
+    /* height: 100vh;
+    width: 100vw; */
+    background-image: url(images/griffindor_b.jpg);
+    /*opacity: 0.3;*/
+    z-index: 2;
+}
+
+#hufflepuff_b {
+    background-image: url(images/hufflepuff_b.jpg);
+    /*opacity: 0.3;*/
+    z-index: 2;
+}
+
+#slytherin_b {
+    background-image: url(images/slytherin_b.jpg);
+    /*opacity: 0.3;*/
+    z-index: 2;
+}
+
+#ravenclaw_b {
+    background-image: url(images/ravenclaw_b.jpg);
+    /*opacity: 0.3;*/
+    z-index: 2;
+}
+
+/* .sections::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+} */
+
+.sections:first-child::before {
+    display: none;
+}
+
+.sections::before {
+    content: "";
+    position: absolute;
+    background-image: url("../css/images/steps.png");
+    width: 100%;
+    height: 153px;
+    top: -76px;
+    z-index: 10;
+}
+
+.sections__content {
+    display: flex;
+    align-items: center;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.sections__img {
+    width: 372px;
+    height: 520px;
+}
+
+.sections__text {
+    max-width: 1200px;
+    text-align: center;
+    font-size: 75px;
+    color: #fff;
+    padding: 10px;
+    border: 5px solid #000;
+    border-radius: 100px;
+    background-image: url("./images/paper.jpg");
+}
+
+
 @media screen and (max-width: 600px) {
+
     /* Изменения для мобильных устройств или окон с шириной до 600px */
     .fixed-buttons {
-        flex-direction: column; /* Расположение кнопок в столбец */
-        align-items: end; /* Выравнивание кнопок по центру */
-        bottom: 10px; /* Новое значение отступа снизу */
+        flex-direction: column;
+        /* Расположение кнопок в столбец */
+        align-items: end;
+        /* Выравнивание кнопок по центру */
+        bottom: 10px;
+        /* Новое значение отступа снизу */
     }
 
     .button-image {
-        width: 80px; /* Уменьшенная ширина кнопок для мобильных устройств */
-        height: 80px; /* Уменьшенная высота кнопок для мобильных устройств */
+        width: 80px;
+        /* Уменьшенная ширина кнопок для мобильных устройств */
+        height: 80px;
+        /* Уменьшенная высота кнопок для мобильных устройств */
     }
 }
 
 body {
     font-family: 'HarryPotterFont', sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* min-height: 100vh; */
     margin: 0;
 }
